@@ -2,8 +2,8 @@
 function preventDupNeighbors(arr) {
 	// kill off duplicates, track occurences, sort by occs
 	let noDups = Array.from(new Set(arr))
-										.map(item => [item,occsOf(item,arr)])
-										.sort((a,b)=>b[1]-a[1]);
+		.map(item => [item,occsOf(item,arr)])
+		.sort((a,b)=>b[1]-a[1]);
 
 	let returnArr = new Array(arr.length).fill(null);
 
